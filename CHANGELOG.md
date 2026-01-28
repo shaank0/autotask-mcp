@@ -1,3 +1,69 @@
+# 1.0.0 (2026-01-28)
+
+
+### Bug Fixes
+
+* add CLI bin entry and enforce test failures in CI ([10ce1c7](https://github.com/shaank0/autotask-mcp/commit/10ce1c71324f5b301a6b41e151f187f377cd6793)), closes [#4](https://github.com/shaank0/autotask-mcp/issues/4) [#4](https://github.com/shaank0/autotask-mcp/issues/4)
+* Address GitHub issues [#3](https://github.com/shaank0/autotask-mcp/issues/3), [#8](https://github.com/shaank0/autotask-mcp/issues/8), [#9](https://github.com/shaank0/autotask-mcp/issues/9) - search filtering and API endpoints ([b11256b](https://github.com/shaank0/autotask-mcp/commit/b11256bab28df8e98f29017ebc5f20059253df65))
+* **ci:** add GITHUB_TOKEN to version detection step ([99e2b29](https://github.com/shaank0/autotask-mcp/commit/99e2b29c772e1fd80995888126b849629d8cb088))
+* **ci:** Add proper permissions for release and security scan jobs ([d60e138](https://github.com/shaank0/autotask-mcp/commit/d60e138684c214dcab6196cffe977fb581bc20eb))
+* **ci:** Disable npm publishing in semantic-release ([ae11880](https://github.com/shaank0/autotask-mcp/commit/ae118800add292aaf5aa626aef29cc61e9d8cff9))
+* **ci:** pack MCPB bundle after semantic-release version bump ([53c952e](https://github.com/shaank0/autotask-mcp/commit/53c952ea61c6b3f16b5f4405d5b9143e214d4b53))
+* **ci:** replace dist file uploads with MCPB bundle in releases ([280127f](https://github.com/shaank0/autotask-mcp/commit/280127f8f4541549b7f44fc68c0cd67807a91c5b))
+* **ci:** Replace local file dependency with git dependency for autotask-node ([828bf1a](https://github.com/shaank0/autotask-mcp/commit/828bf1abb4872ecc40c0b64ea080c6126ecee2ed)), closes [asachs01/autotask-node#v2](https://github.com/asachs01/autotask-node/issues/v2)
+* **deps:** Update autotask-node to v2.0.6 ([1a2e08e](https://github.com/shaank0/autotask-mcp/commit/1a2e08e3f9d808b0e424ea4c8bcc46a07727d784))
+* **deps:** Update package-lock.json with correct autotask-node v2.0.6 hash ([7c0ff90](https://github.com/shaank0/autotask-mcp/commit/7c0ff90eb5623734c9f09643cccd46582d8c9568))
+* **docker:** Fix build and runtime failures in Dockerfile ([c6e37e2](https://github.com/shaank0/autotask-mcp/commit/c6e37e266c1eccf531247bd6110bfc7e06f75819))
+* **docs:** Add base path prefix to content links for GitHub Pages ([be4b661](https://github.com/shaank0/autotask-mcp/commit/be4b66172c2f000e09a8d887b051d4bd2bb8ad05))
+* **docs:** Use npx for Claude Code instructions instead of bundle extraction ([e5c7a01](https://github.com/shaank0/autotask-mcp/commit/e5c7a01937ba323ce2463c2ce3c9e9c6eae65bd3))
+* don't crash on missing credentials, return tool-level errors instead ([cd9294c](https://github.com/shaank0/autotask-mcp/commit/cd9294c900350eab5f91ce6152121e5571abb88c))
+* load .env file at startup for credential configuration ([192c52c](https://github.com/shaank0/autotask-mcp/commit/192c52c5b324ee485c07c73367f7d80da236f73d))
+* **mcpb:** Add bundle signing, size reduction, and Claude Desktop compatibility ([89a4711](https://github.com/shaank0/autotask-mcp/commit/89a471172a7486f56aadffaa8881a7ff96c87930))
+* **mcpb:** Fix bundle runtime errors and add automated test harness ([c3beb22](https://github.com/shaank0/autotask-mcp/commit/c3beb221bdacf949aa543d846188ab1fb85639d2))
+* prevent dotenv stdout pollution in MCP stdio transport ([8818749](https://github.com/shaank0/autotask-mcp/commit/8818749b2ec6979eddca0d45f7dd13a3c7c60756))
+* prevent stdout pollution from autotask-node's dotenv.config() ([abc61fd](https://github.com/shaank0/autotask-mcp/commit/abc61fdcd46f3891fe4501d226986163fe0dec95))
+* resolve .env relative to script location as fallback ([367eb0d](https://github.com/shaank0/autotask-mcp/commit/367eb0d9a4bbcf0ec2b73e95ab96737145f586ac))
+* **security:** update brace-expansion for CVE-2025-5889 ([#19](https://github.com/shaank0/autotask-mcp/issues/19)) ([619d8d8](https://github.com/shaank0/autotask-mcp/commit/619d8d88553f95263f84bdb4dc9be5ff95d3230c)), closes [#13](https://github.com/shaank0/autotask-mcp/issues/13) [#14](https://github.com/shaank0/autotask-mcp/issues/14)
+* **security:** update Docker base image for npm CVEs ([#16](https://github.com/shaank0/autotask-mcp/issues/16)) ([cef86ba](https://github.com/shaank0/autotask-mcp/commit/cef86ba8f5397f04612f54c128e373e01392b09c)), closes [#13](https://github.com/shaank0/autotask-mcp/issues/13)
+* **security:** update lodash for CVE-2025-13465 ([#18](https://github.com/shaank0/autotask-mcp/issues/18)) ([99e856d](https://github.com/shaank0/autotask-mcp/commit/99e856d114fed5e4665bb69600d18977d7f67762)), closes [#13](https://github.com/shaank0/autotask-mcp/issues/13) [#14](https://github.com/shaank0/autotask-mcp/issues/14)
+* **security:** update MCP SDK for CVE-2026-0621, CVE-2025-66414 ([#17](https://github.com/shaank0/autotask-mcp/issues/17)) ([33a7d81](https://github.com/shaank0/autotask-mcp/commit/33a7d81ce1181aaad74017ab32ba8918411c3e4e)), closes [#13](https://github.com/shaank0/autotask-mcp/issues/13) [#11](https://github.com/shaank0/autotask-mcp/issues/11)
+* **security:** update tar for CVE-2026-23950, CVE-2026-23745 ([6890ca6](https://github.com/shaank0/autotask-mcp/commit/6890ca60688db539020eac3c02132ebc8858463c)), closes [#12](https://github.com/shaank0/autotask-mcp/issues/12)
+* sync manifest.json version from package.json at pack time ([c7a9724](https://github.com/shaank0/autotask-mcp/commit/c7a97241777c47f28bfcaf3cb4a4f6392d68d3b3))
+* **test:** Run all MCPB tests in single server session to avoid rate limits ([7b425cf](https://github.com/shaank0/autotask-mcp/commit/7b425cfbbba7a0ceeb0d6681dc84fb4a22ea421a))
+* **tests:** Resolve ESM compatibility and rewrite mapping tests ([a294a7c](https://github.com/shaank0/autotask-mcp/commit/a294a7c390a5ae56b70c269f5f6aaf0c3ff224e5))
+* upgrade autotask-node to v2.0.3 (removes dotenv dependency) ([1a5727b](https://github.com/shaank0/autotask-mcp/commit/1a5727b709a84a3741adf15b51f26502d9a4c5c7))
+* upgrade autotask-node to v2.0.4 (graceful logger) ([213db40](https://github.com/shaank0/autotask-mcp/commit/213db40377852ab3dfe6971daf57cbf9f71f5e02))
+* upgrade autotask-node to v2.0.5 (stderr-only logging) ([a01588b](https://github.com/shaank0/autotask-mcp/commit/a01588b1144bcb2adfae44c102dd7879225000c3))
+
+
+* feat!: Namespace all MCP tools with 'autotask_' prefix (v2.0.0) ([1190101](https://github.com/shaank0/autotask-mcp/commit/119010121974b991f8f0438d1ee7eca8c990cd81))
+
+
+### Features
+
+* Add ESLint configuration file ([3a8ef4d](https://github.com/shaank0/autotask-mcp/commit/3a8ef4d550f3ea8bf09640967709cf5e4823823d))
+* add HTTP Streamable transport for remote MCP access ([2d31853](https://github.com/shaank0/autotask-mcp/commit/2d3185348cb4387c5726892bb15d9c432279afa3)), closes [#7](https://github.com/shaank0/autotask-mcp/issues/7)
+* add MCPB (MCP Bundle) packaging for desktop distribution ([e7601b1](https://github.com/shaank0/autotask-mcp/commit/e7601b1d158c261a6607530f59267dff99b06ba8))
+* Add picklist discovery tools and elicitation support ([93c68f2](https://github.com/shaank0/autotask-mcp/commit/93c68f20acf31c0a8cc661689f820bf7e3518393))
+* Initialize Taskmaster and fix build setup ([5e22e0c](https://github.com/shaank0/autotask-mcp/commit/5e22e0cf9d51043f7d348bdba5eb66886843a8cf))
+* **search:** Add compact response format, smart defaults, and pagination ([00aa4b9](https://github.com/shaank0/autotask-mcp/commit/00aa4b91e7329e833c60545d9d5e081f5a8f374c))
+* Switch Docker publishing to GitHub Container Registry ([97fa1ac](https://github.com/shaank0/autotask-mcp/commit/97fa1aca3226782b7110984a712fa01ee50e7915))
+
+
+### BREAKING CHANGES
+
+* All 35 MCP tools now use 'autotask_' prefix to prevent
+naming collisions when multiple MCP servers are connected.
+
+- search_companies → autotask_search_companies
+- create_ticket → autotask_create_ticket
+- test_connection → autotask_test_connection
+- (all other tools follow same pattern)
+
+Migration: Update all tool calls to use new namespaced names.
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+
 ## [2.5.3](https://github.com/asachs01/autotask-mcp/compare/v2.5.2...v2.5.3) (2026-01-27)
 
 
